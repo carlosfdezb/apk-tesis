@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ceispieci.ceisp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Views.Activity.AsignaturaDetalleActivity"
+            android:parentActivityName=".Views.Activity.AsignaturasActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Views.Activity.AlumnoActivity"
+            android:parentActivityName=".Views.Activity.PrincipalActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Views.Activity.CursoActivity"
+            android:parentActivityName=".Views.Activity.PrincipalActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Views.Activity.CalendarioActivity"
+            android:parentActivityName=".Views.Activity.PrincipalActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Views.Activity.AsignaturasActivity"
+            android:parentActivityName=".Views.Activity.PrincipalActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Views.Activity.CargaActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullscreenTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Views.Activity.PrincipalActivity"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Views.Activity.LoginActivity"
+            android:theme="@style/AppThemeNoAction"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

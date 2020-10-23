@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/noticias"
+            android:icon="@drawable/ic_noticias"
+            android:title="Noticias" />
+        <item
+            android:id="@+id/nav_asignaturas"
+            android:icon="@drawable/ic_mis_asignaturas"
+            android:title="Mis asignaturas" />
+        <item
+            android:id="@+id/nav_calendario"
+            android:icon="@drawable/ic_calendario"
+            android:title="Calendario" />
+        <item
+            android:id="@+id/nav_curso"
+            android:icon="@drawable/ic_mi_curso"
+            android:title="Mi curso" />
+        <item
+            android:id="@+id/nav_alumno"
+            android:icon="@drawable/ic_mis_datos"
+            android:title="Mis datos" />
+    </group>
+
+    <item android:title="Opciones">
+        <menu>
+            <item
+                android:id="@+id/cerrar_sesion"
+                android:icon="@drawable/ic_cerrar_sesion"
+                android:title="Cerrar sesión" />
+        </menu>
+    </item>
+
+</menu>
